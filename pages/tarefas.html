@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+</head>
+
+<body>
+    <section class="container-fluid">
+        <div class="filter">
+            <h1 class="tl-page">Listagem de Tarefas</h1>
+            <a href="cad-tarefas.html" target="iframecontador" class="btn btn-primary btn-new"><i class="fa fa-plus" aria-hidden="true"></i> Incluir Tarefa</a>
+            <details>
+                <summary>Filtrar Pesquisa</summary>
+                <form action="">
+                    <div class="row">
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                            <select class="form-control">
+                              <option>Todas as Empresas</option>
+                              <option>ALEGRAR | ALEGRAR RECREAÇÃO E LAZER LTDA</option>
+                              <option>MATRIZ | Apur Pis Cofins N.Cumul Cumulativo</option>
+                              <option>CARDOSO | AUTOCENTER CARDOSO</option>
+                              <option>AVON | Avon Cosméticos</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                            <select class="form-control">
+                              <option>Responsáveis</option>
+                              <option>carlos mota</option>
+                              <option>Joice Marques Burhof</option>
+                              <option>Leonardo Panarella</option>
+                              <option>Rita Muller</option>
+                        </select>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                            <select class="form-control">
+                              <option>Tipo de IRPJ</option>
+                              <option>Todos os tipos de IRPJ</option>
+                              <option>0 - Nenhum</option>
+                              <option>1 - Corretora de Seguros</option>
+                        </select>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                            <select class="form-control">
+                              <option>Atividades</option>
+                              <option>Todas as Atividades</option>
+                              <option>Abertura de empresa marcio</option>
+                              <option>Alteração Contratual</option>
+                              <option>Ordem de Tarefas</option>
+                        </select>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                            <select class="form-control">
+                              <option>Situação</option>
+                              <option>Todos</option>
+                              <option>Abertas</option>
+                              <option>Cancelados</option>
+                              <option>Concluídas</option>
+                        </select>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="campoData" placeholder="De:">
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="campoDate" placeholder="Até:">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="filter-button">
+                                <a href="#" class="btn btn-primary" type="submit"><i class="fa fa-search" aria-hidden="true"></i> Filtrar</a>
+                                <a href="#" class="btn btn-primary" type="reset"><i class="fa fa-trash" aria-hidden="true"></i> Limpar</a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </details>
+        </div>
+        <details class="alert alert-info" role="alert">
+            <summary><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Clique e confira algumas dicas</summary>
+
+            <span>• Clique no número da tarefa para visualizar as informações da tarefa.</span>
+            <span>• Para Alterar, Concluir ou Cancelar uma Tarefa clique nos botões disponíveis na listagem.</span>
+        </details>
+        <table class="table table-striped pro-tarefas">
+            <thead>
+                <tr>
+                    <td>Nº</td>
+                    <td>Apelido</td>
+                    <td>Empresa</td>
+                    <td>Tipo de IRPJ</td>
+                    <td>Data Limite</td>
+                    <td>Responsável</td>
+                    <td>Situação</td>
+                    <td></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="visualizador-tarefas.html" target="iframecontador" class="btn btn-primary">25</a></td>
+                    <td>010</td>
+                    <td>AUTO POSTO MARUN LTDA</td>
+                    <td>Lucro Real</td>
+                    <td>20/02/2013</td>
+                    <td>Vanessa Master</td>
+                    <td>ABERTA</td>
+                    <td>
+                        <a href="alteracao-tarefas.html" target="iframecontador" class="btn btn-info"><i class="fa fa-pencil" aria-hidden="true"></i> <span>Alterar</span></a>
+                        <a href="#" target="iframecontador" class="btn btn-success"><i class="fa fa-check" aria-hidden="true"></i> <span>Concluir</span></a>
+                        <a href="#" class="btn btn-danger"><i class="fa fa-ban" aria-hidden="true"></i> <span>Cancelar</span></a>
+                        <a href="#" class="btn btn-warning"><i class="fa fa-refresh" aria-hidden="true"></i> <span>Restaurar</span></a>
+                    </td>
+                </tr>
+
+
+
+            </tbody>
+        </table>
+        <nav class="pagination" aria-label="Page navigation">
+            <ul class="pagination">
+                <li>
+                    <a href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li>
+                    <a href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <button class="btn btn-export btn-warning"><i class="fa fa-download" aria-hidden="true"></i> Exportar para PDF</button>
+    </section>
+</body>
+
+<script>
+    jQuery(function($) {
+        $("#campoData").mask("99/99/9999");
+        $("#campoDate").mask("99/99/9999");
+    });
+
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/contmatic.js"></script>
+
+</html>
