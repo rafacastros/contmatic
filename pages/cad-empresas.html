@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+</head>
+
+<body>
+    <section class="container-fluid">
+        <h1 class="tl-page">Visualização do Cadastro de Empresas</h1>
+
+        <div class="dados-empresa">
+            <p>Dados Principais</p>
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <label>Código</label>
+                    <input type="text" disabled placeholder="29069">
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <label>Apelido</label>
+                    <input type="text" disabled placeholder="ALEGRAR">
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <label>Empresa</label>
+                    <input type="text" disabled placeholder="ALEGRAR RECREAÇÃO E LAZER LTDA">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <label>CNPJ / CPF / CEI</label>
+                    <input type="text" disabled placeholder="11.022.638/0001-40">
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <label>Tipo IRPJ</label>
+                    <input type="text" disabled placeholder="7 - Simples Nacional (ME)">
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <label>Situação Cadastral</label>
+                    <input type="text" disabled placeholder="Atualizado - 12/09/2016">
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <label>Data de Desativação</label>
+                    <input type="text" disabled placeholder="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <label>Acessso Contador Online</label>
+                    <input type="text" disabled placeholder="Bloqueado">
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <label>Reenvio de primeiro acesso</label>
+                    <a href="#" class="btn btn-primary"><i class="fa fa-envelope-o" aria-hidden="true"></i> Reenviar</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="contato-empresa">
+            <p>Contato</p>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <label>E-mail</label>
+                    <input type="email" disabled placeholder="carolina@alegrarecia.com.br">
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <label>Telefone</label>
+                    <input type="tel" disabled placeholder="38649676">
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <label>Fax</label>
+                    <input type="tel" disabled placeholder="38649676">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="dados-responsavel">
+            <p>Dados do Responsável</p>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <label>Nome do Responsável</label>
+                    <input type="text" disabled placeholder="">
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <label>CPF</label>
+                    <input type="text" disabled placeholder="">
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <label>E-mail</label>
+                    <input type="email" disabled placeholder="">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="redirecionamento">
+            <p>Processos (Abertura e Movimentação)</p>
+            <span>Defina os e-mails que devem ser notificados na movimentação e abertura de processos.</span>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <textarea type="text" disabled placeholder=""></textarea>
+                </div>
+            </div>
+            <p>Obrigações e Arquivos</p>
+            <span>Defina os e-mails que devem ser notificados ao enviar e receber arquivos e obrigações na comunicação com seus clientes. Essa configuração deve ser feita por departamento.</span>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <label>Contábil</label>
+                    <textarea type="text" disabled placeholder=""></textarea>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <label>Folha</label>
+                    <textarea type="text" disabled placeholder=""></textarea>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <label>Escrita</label>
+                    <textarea type="text" disabled placeholder=""></textarea>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <label>Gescon</label>
+                    <textarea type="text" disabled placeholder=""></textarea>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <label>Contador Online</label>
+                    <textarea type="text" disabled placeholder=""></textarea>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <label>JR</label>
+                    <textarea type="text" disabled placeholder=""></textarea>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <label>Processos</label>
+                    <textarea type="text" disabled placeholder=""></textarea>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <label>Tarefas</label>
+                    <textarea type="text" disabled placeholder=""></textarea>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn btn-empresas btn-danger"><i class="fa fa-times" aria-hidden="true"></i> Cancelar</a>
+    </section>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/contmatic.js"></script>
+
+</html>

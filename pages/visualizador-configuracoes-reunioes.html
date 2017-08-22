@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+</head>
+
+<body>
+    <section class="container-fluid">
+        <h1 class="tl-page">Visualização da Configuração de Controle de Reuniões</h1>
+        <div class="dados-empresa">
+            <p>Departamento</p>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <label>Departamento*</label>
+                    <select class="form-control" disabled>
+                        <option value="">Administrativo</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="dados-empresa">
+            <p>Incluir Controle por Empresas</p>
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                    <label class="radio-inline">
+                      <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Sim
+                    </label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                    <label class="radio-inline">
+                      <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Não
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="dados-empresa">
+            <p>Dados Principais</p>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <label>Mês de Início de Controle*</label>
+                    <input type="text" disabled placeholder="09/2016">
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <label>Mês Final do Controle</label>
+                    <input type="text" disabled placeholder="10/2016">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <label>Quantidade de Reuniões Mensais*</label>
+                    <input type="text" disabled placeholder="0">
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <label>Quantidade de Reuniões Mensais por Empresa</label>
+                    <input type="text" disabled placeholder="2">
+                </div>
+            </div>
+        </div>
+        <div class="dados-empresa">
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <label>Empresas*</label>
+                    <select class="form-control" disabled>
+                        <option value="">EMPRESA PARA CONTADOR ONLINE</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="dados-empresa">
+            <p>Empresas Adicionadas</p>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <label>EMPRESA PARA CONTADOR ONLINE</label>
+                    <input type="checkbox" id="CheckEmpresas" value="option1" checked>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <label>Reuniões / Visitas por Mês</label>
+                    <input type="text" disabled placeholder="2">
+                </div>
+            </div>
+        </div>
+        <div class="redirecionamento">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <label>Observação</label>
+                    <textarea type="text" disabled placeholder=""></textarea>
+                    <label>1000 caracteres restantes</label>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn btn-empresas btn-danger"><i class="fa fa-times" aria-hidden="true"></i> Cancelar</a>
+    </section>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/contmatic.js"></script>
+
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+</head>
+
+<body>
+    <section class="container-fluid">
+        <div class="filter">
+            <h1 class="tl-page">Listagem Arquivos - Contábil Phoenix</h1>
+            <select class="nav listagem">
+                   <option selected disabled>Selecione uma Listagem</option>
+                  <option value="pro">Protocolados</option>
+                  <option value="npro">Não Protocolados</option>
+            </select>
+            <details>
+                <summary>Filtrar Pesquisa</summary>
+                <form action="">
+                    <div class="row">
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                            <select class="form-control">
+                              <option>Empresas</option>
+                              <option>ALEGRAR | ALEGRAR RECREAÇÃO E LAZER LTDA</option>
+                              <option>ALICIA | ALICIA E JULIANA INFORMATICA ME</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="campoData" placeholder="De:">
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="campoDate" placeholder="Até:">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="filter-button">
+                                <a href="#" class="btn btn-primary" type="submit"><i class="fa fa-search" aria-hidden="true"></i> Filtrar</a>
+                                <a href="#" class="btn btn-primary" type="reset"><i class="fa fa-trash" aria-hidden="true"></i> Limpar</a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </details>
+        </div>
+        <details class="alert alert-info" role="alert">
+            <summary><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Clique e confira algumas dicas</summary>
+
+            <span>• Selecione o Filtro por Empresa ou intervalo de envio de Arquivos para filtrar os Registros.</span>
+            <span>• Clique sobre o arquivo para verificar as informações do Arquivo e Protocolos de Acesso.</span>
+        </details>
+    </section>
+    <section class="container-fluid">
+        <div class="select-pane" id="pro">
+            <table class="table table-striped arq-lista">
+                <thead>
+                    <tr>
+                        <td></td>
+                        <td>Apelido</td>
+                        <td>Empresa</td>
+                        <td>Descrição</td>
+                        <td>Tipo</td>
+                        <td>Inclusão</td>
+                        <td>Tamanho</td>
+                        <td></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><i class="fa fa-envelope" aria-hidden="true"></i></td>
+                        <td>100</td>
+                        <td><a href="listagem-arquivos-protocolo.html" target="iframecontador">EMPRESA DE CONSTRUÇÃO CIVIL</a></td>
+                        <td>Período: 01/01/2016 à 31/12/2016 - Modelo: 1</td>
+                        <td>Balanço Patrimonial</td>
+                        <td>26/08/2016</td>
+                        <td>53,200 KB</td>
+                        <td>
+                            <a href="" class="btn btn-primary"><i class="fa fa-download" aria-hidden="true"></i><span>Download</span></a>
+                            <a href="" class="btn btn-danger"><i class="fa fa-times" aria-hidden="true"></i><span>Excluir</span></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa fa-envelope" aria-hidden="true"></i></td>
+                        <td>AVON</td>
+                        <td><a href="listagem-arquivos-protocolo.html" target="iframecontador">Avon Cosméticos</a></td>
+                        <td>Mês 04/2014 - Modelo 1</td>
+                        <td>DRE</td>
+                        <td>16/04/2014</td>
+                        <td>37,467 KB</td>
+                        <td>
+                            <a href="" class="btn btn-primary"><i class="fa fa-download" aria-hidden="true"></i><span>Download</span></a>
+                            <a href="" class="btn btn-danger"><i class="fa fa-times" aria-hidden="true"></i><span>Excluir</span></a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <nav class="pagination" aria-label="Page navigation">
+                <ul class="pagination">
+                    <li>
+                        <a href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li>
+                        <a href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="btn btn-export btn-warning"><i class="fa fa-download" aria-hidden="true"></i> Exportar para PDF</button>
+        </div>
+        <div class="select-pane" id="npro">
+            <table class="table table-striped arq-lista">
+                <thead>
+                    <tr>
+                        <td></td>
+                        <td>Apelido</td>
+                        <td>Empresa</td>
+                        <td>Descrição</td>
+                        <td>Tipo</td>
+                        <td>Inclusão</td>
+                        <td>Tamanho</td>
+                        <td></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><i class="fa fa-envelope-open" aria-hidden="true"></i></td>
+                        <td>100</td>
+                        <td><a href="listagem-arquivos-protocolo.html" target="iframecontador">EMPRESA DE CONSTRUÇÃO CIVIL</a></td>
+                        <td>Período: 01/01/2016 à 31/12/2016 - Modelo: 1</td>
+                        <td>Balanço Patrimonial</td>
+                        <td>26/08/2016</td>
+                        <td>53,200 KB</td>
+                        <td>
+                            <a href="" class="btn btn-primary"><i class="fa fa-download" aria-hidden="true"></i><span>Download</span></a>
+                            <a href="" class="btn btn-danger"><i class="fa fa-times" aria-hidden="true"></i><span>Excluir</span></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa fa-envelope-open" aria-hidden="true"></i></td>
+                        <td>AVON</td>
+                        <td><a href="listagem-arquivos-protocolo.html" target="iframecontador">Avon Cosméticos</a></td>
+                        <td>Mês 04/2014 - Modelo 1</td>
+                        <td>DRE</td>
+                        <td>16/04/2014</td>
+                        <td>37,467 KB</td>
+                        <td>
+                            <a href="" class="btn btn-primary"><i class="fa fa-download" aria-hidden="true"></i><span>Download</span></a>
+                            <a href="" class="btn btn-danger"><i class="fa fa-times" aria-hidden="true"></i><span>Excluir</span></a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <nav class="pagination" aria-label="Page navigation">
+                <ul class="pagination">
+                    <li>
+                        <a href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li>
+                        <a href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="btn btn-export btn-warning"><i class="fa fa-download" aria-hidden="true"></i> Exportar para PDF</button>
+        </div>
+    </section>
+</body>
+
+
+
+<script>
+    $(document).on('change', 'select.nav', function() {
+        var $this = this;
+        var target = $this.value;
+        $('div.select-pane').hide();
+        $('div[id="' + target + '"]').show('true');
+    })
+
+    $(document).on('click', '.series-select', function() {
+        var $this = this;
+        var txt = $this.text + '<span class="caret"></span>';
+        $($this).closest('li.dropdown').find('a.dropdown-toggle').html(txt);
+
+    })
+
+</script>
+
+<script>
+    jQuery(function($) {
+        $("#campoData").mask("99/99/9999");
+        $("#campoDate").mask("99/99/9999");
+    });
+
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/contmatic.js"></script>
+
+</html>
