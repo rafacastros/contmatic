@@ -163,7 +163,7 @@ span.versao {
     padding-left: 20px;
     display: block;
     position: absolute;
-min-height: 800px;
+    min-height: 800px;
     width: 100%;
     border: 0;
     padding-left: 0;
@@ -667,29 +667,31 @@ label.sep-processo {
     table.reu-agenda2 td:nth-child(7),
     table.reu-agenda2 td span,
     table.pro-agendador td:nth-child(4),
-    table.pro-agendador td:nth-child(5),
+    table.pro-agendador td:nth-child(1),
     table.pro-agendador td span,
     table.reu-config td:nth-child(6),
     table.reu-config td span,
     table.list-proces td span,
-    table.list-proces td:nth-child(2),
+    table.list-proces td:nth-child(5),
     table.list-proces td:nth-child(6),
-    table.list-proces td:nth-child(7),
     table.pro-tarefas td span,
     table.pro-tarefas td:nth-child(5),
-    table.pro-tarefas td:nth-child(6),
+    table.pro-tarefas td:nth-child(1),
     table.pro-tipopro td span,
     table.arq-lista td:nth-child(4),
-    table.arq-lista td:nth-child(6),
     table.arq-lista td span,
+    table.rel-aenviados td:nth-child(1),
+    table.rel-aenviados td:nth-child(2),
     table.rel-aenviados td:nth-child(5),
-    table.rel-aenviados td:nth-child(6),
-    table.rel-aenviados td:nth-child(7),
     table.rel-colaboradores td:nth-child(2),
     table.rel-colaboradores td:nth-child(4),
     table.rel-histarefas td:nth-child(4),
     table.rel-histagendador td:nth-child(3),
-    table.rel-obrigacoes td:nth-child(3) {
+    table.rel-obrigacoes td:nth-child(3),
+    table.rel-empresas td:nth-child(2),
+    table.cx-mensagens td:nth-child(4),
+    table.cx-mensagens td:nth-child(6),
+    table.cx-mensagens td span {
         display: none;
     }
     tbody tr td a.btn {

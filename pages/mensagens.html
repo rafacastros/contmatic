@@ -16,23 +16,46 @@
 <body>
     <section class="container-fluid">
         <div class="filter">
-            <h1 class="tl-page">Listagem Arquivos - Jr Phoenix</h1>
+            <h1 class="tl-page">Lista de Mensagens</h1>
             <select class="nav listagem">
                    <option selected disabled>Selecione as Mensagens</option>
-                   <option value="npro">Recebidas - Não Visualizadas</option>
-                  <option value="npro">Recebidas - Visualizadas</option>
-                  <option value="pro">Enviadas - Não Visualizadas Visualizadas</option>
-                  <option value="pro">Enviadas - Visualizadas</option>
+                   <option value="recebidas-nv">Recebidas - Não Visualizadas</option>
+                  <option value="recebidas-v">Recebidas - Visualizadas</option>
+                  <option value="enviadas-nv">Enviadas - Não Visualizadas Visualizadas</option>
+                  <option value="enviadas=v">Enviadas - Visualizadas</option>
             </select>
             <details>
                 <summary>Filtrar Pesquisa</summary>
                 <form action="">
                     <div class="row">
+                       <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Assunto">
+                            </div>
+                        </div>
                         <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
                             <select class="form-control">
-                              <option>Empresas</option>
+                              <option selected disabled>Empresas</option>
                               <option>ALEGRAR | ALEGRAR RECREAÇÃO E LAZER LTDA</option>
                               <option>ALICIA | ALICIA E JULIANA INFORMATICA ME</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                            <select class="form-control">
+                              <option selected disabled>Departamentos</option>
+                              <option>Todos os Departamentos</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                            <select class="form-control">
+                              <option selected disabled>Remetente</option>
+                              <option>Todos os Remetentes</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                            <select class="form-control">
+                              <option selected disabled>Destinatário</option>
+                              <option>Todos os Destinatários</option>
                             </select>
                         </div>
                         <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
@@ -57,50 +80,29 @@
                 </form>
             </details>
         </div>
-        <details class="alert alert-info" role="alert">
-            <summary><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Clique e confira algumas dicas</summary>
-
-            <span>• Selecione o Filtro por Empresa ou intervalo de envio de Arquivos para filtrar os Registros.</span>
-            <span>• Clique sobre o arquivo para verificar as informações do Arquivo e Protocolos de Acesso.</span>
-        </details>
     </section>
     <section class="container-fluid">
-        <div class="select-pane" id="pro">
-            <table class="table table-striped arq-lista">
+        <div class="select-pane" id="recebidas-nv">
+            <table class="table table-striped cx-mensagens">
                 <thead>
                     <tr>
-                        <td></td>
+                        <td>Assunto</td>
+                        <td>Remetente</td>
+                        <td>Destinatário</td>
                         <td>Apelido</td>
                         <td>Empresa</td>
-                        <td>Descrição</td>
-                        <td>Tipo</td>
-                        <td>Inclusão</td>
-                        <td>Tamanho</td>
+                        <td>Recebido em</td>
                         <td></td>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><i class="fa fa-envelope" aria-hidden="true"></i></td>
-                        <td>100</td>
-                        <td><a href="listagem-arquivos-protocolo.html" target="iframecontador">EMPRESA DE CONSTRUÇÃO CIVIL</a></td>
-                        <td>Período: 01/01/2016 à 31/12/2016 - Modelo: 1</td>
-                        <td>Balanço Patrimonial</td>
-                        <td>26/08/2016</td>
-                        <td>53,200 KB</td>
-                        <td>
-                            <a href="" class="btn btn-primary"><i class="fa fa-download" aria-hidden="true"></i><span>Download</span></a>
-                            <a href="" class="btn btn-danger"><i class="fa fa-times" aria-hidden="true"></i><span>Excluir</span></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><i class="fa fa-envelope" aria-hidden="true"></i></td>
-                        <td>AVON</td>
-                        <td><a href="listagem-arquivos-protocolo.html" target="iframecontador">Avon Cosméticos</a></td>
-                        <td>Mês 04/2014 - Modelo 1</td>
-                        <td>DRE</td>
-                        <td>16/04/2014</td>
-                        <td>37,467 KB</td>
+                        <td><a href="visualizador-mensagens.html" target="iframecontador"><i class="fa fa-envelope" aria-hidden="true"></i> Teste</a></td>
+                        <td>AUTO POSTO KAIMAN LTDA</td>
+                        <td>Vanessa Master</td>
+                        <td>007</td>
+                        <td>AUTO POSTO KAIMAN LTDA</td>
+                        <td>27/01/2016</td>
                         <td>
                             <a href="" class="btn btn-primary"><i class="fa fa-download" aria-hidden="true"></i><span>Download</span></a>
                             <a href="" class="btn btn-danger"><i class="fa fa-times" aria-hidden="true"></i><span>Excluir</span></a>
@@ -129,42 +131,125 @@
             </nav>
             <button class="btn btn-export btn-warning"><i class="fa fa-download" aria-hidden="true"></i> Exportar para PDF</button>
         </div>
-        <div class="select-pane" id="npro">
-            <table class="table table-striped arq-lista">
+        <div class="select-pane" id="recebidas-v">
+            <table class="table table-striped cx-mensagens">
                 <thead>
                     <tr>
-                        <td></td>
+                        <td>Assunto</td>
+                        <td>Remetente</td>
+                        <td>Destinatário</td>
                         <td>Apelido</td>
                         <td>Empresa</td>
-                        <td>Descrição</td>
-                        <td>Tipo</td>
-                        <td>Inclusão</td>
-                        <td>Tamanho</td>
+                        <td>Recebido em</td>
                         <td></td>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><i class="fa fa-envelope-open" aria-hidden="true"></i></td>
-                        <td>100</td>
-                        <td><a href="listagem-arquivos-protocolo.html" target="iframecontador">EMPRESA DE CONSTRUÇÃO CIVIL</a></td>
-                        <td>Período: 01/01/2016 à 31/12/2016 - Modelo: 1</td>
-                        <td>Balanço Patrimonial</td>
-                        <td>26/08/2016</td>
-                        <td>53,200 KB</td>
+                        <td><a href="visualizador-mensagens.html" target="iframecontador"><i class="fa fa-envelope-open" aria-hidden="true"></i> Teste</a></td>
+                        <td>AUTO POSTO KAIMAN LTDA</td>
+                        <td>Vanessa Master</td>
+                        <td>007</td>
+                        <td>AUTO POSTO KAIMAN LTDA</td>
+                        <td>27/01/2016</td>
                         <td>
                             <a href="" class="btn btn-primary"><i class="fa fa-download" aria-hidden="true"></i><span>Download</span></a>
                             <a href="" class="btn btn-danger"><i class="fa fa-times" aria-hidden="true"></i><span>Excluir</span></a>
                         </td>
                     </tr>
+                </tbody>
+            </table>
+            <nav class="pagination" aria-label="Page navigation">
+                <ul class="pagination">
+                    <li>
+                        <a href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li>
+                        <a href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="btn btn-export btn-warning"><i class="fa fa-download" aria-hidden="true"></i> Exportar para PDF</button>
+        </div>
+        <div class="select-pane" id="enviadas-nv">
+            <table class="table table-striped cx-mensagens">
+                <thead>
                     <tr>
-                        <td><i class="fa fa-envelope-open" aria-hidden="true"></i></td>
-                        <td>AVON</td>
-                        <td><a href="listagem-arquivos-protocolo.html" target="iframecontador">Avon Cosméticos</a></td>
-                        <td>Mês 04/2014 - Modelo 1</td>
-                        <td>DRE</td>
-                        <td>16/04/2014</td>
-                        <td>37,467 KB</td>
+                        <td>Assunto</td>
+                        <td>Remetente</td>
+                        <td>Destinatário</td>
+                        <td>Apelido</td>
+                        <td>Empresa</td>
+                        <td>Recebido em</td>
+                        <td></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="visualizador-mensagens.html" target="iframecontador"><i class="fa fa-envelope-open" aria-hidden="true"></i> Teste</a></td>
+                        <td>AUTO POSTO KAIMAN LTDA</td>
+                        <td>Vanessa Master</td>
+                        <td>007</td>
+                        <td>AUTO POSTO KAIMAN LTDA</td>
+                        <td>27/01/2016</td>
+                        <td>
+                            <a href="" class="btn btn-primary"><i class="fa fa-download" aria-hidden="true"></i><span>Download</span></a>
+                            <a href="" class="btn btn-danger"><i class="fa fa-times" aria-hidden="true"></i><span>Excluir</span></a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <nav class="pagination" aria-label="Page navigation">
+                <ul class="pagination">
+                    <li>
+                        <a href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li>
+                        <a href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="btn btn-export btn-warning"><i class="fa fa-download" aria-hidden="true"></i> Exportar para PDF</button>
+        </div>
+        <div class="select-pane" id="enviadas-v">
+            <table class="table table-striped cx-mensagens">
+                <thead>
+                    <tr>
+                        <td>Assunto</td>
+                        <td>Remetente</td>
+                        <td>Destinatário</td>
+                        <td>Apelido</td>
+                        <td>Empresa</td>
+                        <td>Recebido em</td>
+                        <td></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="visualizador-mensagens.html" target="iframecontador"><i class="fa fa-envelope-open" aria-hidden="true"></i> Teste</a></td>
+                        <td>AUTO POSTO KAIMAN LTDA</td>
+                        <td>Vanessa Master</td>
+                        <td>007</td>
+                        <td>AUTO POSTO KAIMAN LTDA</td>
+                        <td>27/01/2016</td>
                         <td>
                             <a href="" class="btn btn-primary"><i class="fa fa-download" aria-hidden="true"></i><span>Download</span></a>
                             <a href="" class="btn btn-danger"><i class="fa fa-times" aria-hidden="true"></i><span>Excluir</span></a>
