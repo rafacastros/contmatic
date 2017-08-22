@@ -379,6 +379,12 @@ i.ata-salva {
     color: #b21b0b;
 }
 
+table {
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: scroll;
+}
+
 .table thead tr td {
     color: #123553;
     font-weight: 800;
@@ -691,7 +697,11 @@ label.sep-processo {
     table.rel-empresas td:nth-child(2),
     table.cx-mensagens td:nth-child(4),
     table.cx-mensagens td:nth-child(6),
-    table.cx-mensagens td span {
+    table.cx-mensagens td span,
+    table.mens-sac td:nth-child(1),
+    table.mens-sac td:nth-child(2),
+    table.mens-sac td:nth-child(7),
+    table.mens-sac td span {
         display: none;
     }
     tbody tr td a.btn {
@@ -703,6 +713,9 @@ label.sep-processo {
     .news {
         width: 100%;
     }
+    table td a.btn {
+        margin-bottom: 5px;
+    } 
 }
 
 @media screen and (max-width: 480px) {
