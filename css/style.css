@@ -163,7 +163,7 @@ span.versao {
     padding-left: 20px;
     display: block;
     position: absolute;
-    min-height: 800px;
+min-height: 800px;
     width: 100%;
     border: 0;
     padding-left: 0;
@@ -687,8 +687,8 @@ label.sep-processo {
     table.rel-aenviados td:nth-child(7),
     table.rel-colaboradores td:nth-child(2),
     table.rel-colaboradores td:nth-child(4),
-    table.rel-histarefas td:nth-child(4), 
-    table.rel-histagendador td:nth-child(3), 
+    table.rel-histarefas td:nth-child(4),
+    table.rel-histagendador td:nth-child(3),
     table.rel-obrigacoes td:nth-child(3) {
         display: none;
     }

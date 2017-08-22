@@ -94,15 +94,14 @@
                         <li><a href="pages/historico-tarefas.html" target="iframecontador">Histórico de Tarefas</a></li>
                         <li><a href="pages/historico-agendador.html" target="iframecontador">Histórico do Agendador</a></li>
                         <li><a href="pages/obrigacoes.html" target="iframecontador">Obrigações</a></li>
-                        <li><a href="pages/tipo-processo.html"s target="iframecontador">Tipo de Processos</a></li>
+                        <li><a href="pages/tipo-processo.html" s target="iframecontador">Tipo de Processos</a></li>
                     </ul>
                 </li>
 
                 <li class="nav-header">
                     <div class="link"><i class="fa fa-comments-o"></i>Mensagens<i class="fa fa-chevron-down"></i></div>
                     <ul class="submenu">
-                        <li><a href="#">Enviadas</a></li>
-                        <li><a href="#">Recebidas</a></li>
+                        <li><a href="pages/mensagens.html" s target="iframecontador">Caixa de Mensagens</a></li>
                         <li><a href="#">SAC's</a></li>
                     </ul>
                 </li>
@@ -129,12 +128,12 @@
                     <span class='burger_inside' id='bgrThree'></span>
                 </a>
                 <div class="user">
-                    <i class="fa fa-user" aria-hidden="true"> <b>Olá, Usuário</b> |</i> 
+                    <i class="fa fa-user" aria-hidden="true"> <b>Olá, Usuário</b> |</i>
                     <i class="fa fa-sign-out" aria-hidden="true"> <b>Sair</b></i>
 
                 </div>
             </div>
-            <iframe src="pages/inicio.html" id="iframecontador" class="content-inner" name="iframecontador">
+            <iframe src="pages/inicio.html" id="iframecontador" class="content-inner iframe" name="iframecontador" scrolling='no'>
 
             </iframe>
 
@@ -143,8 +142,16 @@
     </div>
     <span class="versao">Versão: 3.24.1 - 11/08/2017 14:29</span>
 </body>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/contmatic.js"></script>
+<script type="text/javascript" src="js/autoHeight.js"></script>
+
+
+<script>
+    $('iframe').autoHeight();
+</script>
+
 
 </html>
